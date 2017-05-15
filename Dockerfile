@@ -2,7 +2,7 @@ FROM nimbix/ubuntu-cuda-ppc64le
 
 # repo
 WORKDIR /tmp
-RUN curl -O http://download.boulder.ibm.com/ibmdl/pub/software/server/mldl/mldl-repo-local_3.3.0_ppc64el.deb && \
+RUN curl -O https://public.dhe.ibm.com/software/server/POWER/Linux/mldl/ubuntu/mldl-repo-local_3.4.2_ppc64el.deb && \
 	dpkg --install mldl*.deb && rm -f mldl*.deb
 
 # install packages
