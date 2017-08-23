@@ -1,4 +1,4 @@
-FROM nimbix/ubuntu-cuda-ppc64le
+FROM nimbix/ubuntu-desktop-ppc64le:xenial
 
 # repo
 WORKDIR /tmp
