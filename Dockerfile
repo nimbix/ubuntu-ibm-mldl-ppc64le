@@ -13,4 +13,3 @@ COPY motd /etc/powerai_help.txt
 COPY powerai_help.desktop /etc/skel/Desktop/powerai_help.desktop
 RUN chmod 555 /etc/skel/Desktop/powerai_help.desktop
 RUN echo '\n*** Press Q to exit help.\n' >>/etc/powerai_help.txt
-COPY help-launch.html /etc/NAE/help-launch.html
