@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=PowerAI Help
+Comment=
+Exec=xfce4-terminal -T "Using PowerAI" --hide-menubar --hide-toolbar --hide-borders --maximize -e "less /etc/powerai_help.txt"
+Icon=help-contents
+Path=
+Terminal=false
+StartupNotify=false

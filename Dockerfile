@@ -8,5 +8,9 @@ RUN curl -O "$POWERAI_LINK" && dpkg --install mldl*.deb && rm -f mldl*.deb
 
 # install packages
 RUN apt-get update && apt-get -y upgrade && apt-get -y install power-mldl numactl && apt-get clean
-ADD motd /etc/motd
-ADD help-launch.html /etc/NAE/help-launch.html
+COPY motd /etc/motd
+COPY motd /etc/powerai_help.txt
+COPY powerai_help.desktop /etc/skel/Desktop
+RUN chmod 555 /etc/skel/Desktop
+RUN echo "*** Press Q to exit help." >>/etc/powerai_help.txt
+COPY help-launch.html /etc/NAE/help-launch.html
