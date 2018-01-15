@@ -1,4 +1,4 @@
-FROM ubuntu/cuda-ppc64le:8.0-cudnn6-devel-ubuntu16.04
+FROM nvidia/cuda-ppc64le:8.0-cudnn6-devel-ubuntu16.04
 
 RUN apt-get -y update && \
     apt-get -y install curl && \
